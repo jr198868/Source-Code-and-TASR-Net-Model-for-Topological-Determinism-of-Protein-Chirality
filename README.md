@@ -37,6 +37,14 @@ pip install -r requirements.txt
 
 ---
 
+### This repository contains the analysis code and processed results (~8GB). The raw PDB structural data (~98GB) is NOT included due to its large volume.
+
+### To independently reproduce the results or run the full pipeline, YOU MUST FIRST RUN THE DATA DOWNLOAD SCRIPT:
+
+```python
+python step1.0_Batch_Download_human_protein_PDB.py
+```
+
 ## Project Structure
 
 ```

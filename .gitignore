@@ -1,0 +1,70 @@
+# Python runtime files
+*.py[cod]
+__pycache__/
+*.so
+
+# Python environment
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Data and results (usually local)
+Research_results/
+Human_PDB_Data/
+*.pkl
+*.pickle
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# TensorFlow / Keras
+.tensorflow/
+
+# Large files
+*.h5
+*.hdf5
+*.zip
+*.tar.gz
+
+# Results and logs
+*.log
+output/
+results/

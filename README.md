@@ -43,23 +43,22 @@ pip install -r requirements.txt
 src/
 ├── main.py                                          # Pipeline orchestrator
 ├── 
-├── # STEP 1: TDA Pretreatment & Feature Extraction
+├── # STEP 1: Download PDB files
 ├── step1.0_Batch_Download_human_protein_PDB.py      # Batch download PDB files from RCSB
+|
+├── # STEP 2: TDA Pretreatment & Feature Extraction
 ├── step2.0_TDA_Pretreatment.py                      # Extract CA atoms, compute persistent homology
 ├── 
-├── # STEP 2: High-Dimensional Embedding Analysis (HDEA)
+├── # STEP 3: High-Dimensional Embedding Analysis (HDEA)
 ├── step3.0_HDEA_batch_transfer_TDA.py               # Aggregate persistence diagrams → feature vectors
 ├── step3.1_HDEA_dimensionality_reduction_cluster_analysis.py    # PCA + KMeans
 ├── step3.2_HDEA_extract_all_barcode_points.py       # Extract all persistence diagram points
 ├── step3.3_HDEA_universal_barcode.py                # Identify universal barcode signatures
 ├── 
-├── # STEP 3: Protein Similarity Network Analysis (PSN)
+├── # STEP 4: Topological Signature Modeling (F3DR)
 ├── step4.1_F3DR_high_dim_projection_regression.py   # Train autoencoder for topological signature
 ├── step4.2_F3DR_combine_results.py                  # Combine batch results
 ├── step4.3_F3DR_analyze_error_distribution_and_fold_class.py    # Analyze reconstruction error
-├── 
-├── # STEP 4: Topological Signature Modeling (F3DR)
-├── (PSN analysis scripts expected in workflow)
 ├── 
 ├── # STEP 5: Chirality Prediction (TCEPC)
 ├── step5.1_TCEPC_generate_mirrored_coords.py        # Generate D-amino acid mirror proteins

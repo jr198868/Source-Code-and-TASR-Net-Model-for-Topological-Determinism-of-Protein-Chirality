@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18072946.svg)](https://doi.org/10.5281/zenodo.18072946)
 # Topological Determinism of Protein Chirality: Source Code
 
 ## Overview

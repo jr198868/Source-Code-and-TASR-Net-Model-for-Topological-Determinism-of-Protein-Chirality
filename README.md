@@ -45,6 +45,21 @@ pip install -r requirements.txt
 python step1.0_Batch_Download_human_protein_PDB.py
 ```
 
+#### ⚠️ Extraction Note (Windows Users)
+Due to the 260-character path limit in Windows, you might encounter a "Path too long" error when extracting Research_results.zip.
+
+To fix this, please:
+
+Use a short root path: Extract the files to a short directory like C:\res\ or D:\proj\ instead of deep folders or your Desktop.
+
+Use 7-Zip: We strongly recommend using 7-Zip (it handles long paths much better than the default Windows Explorer).
+
+Enable Long Paths: If the error persists, run the following command in PowerShell as Administrator to enable Windows long path support:
+
+```
+New-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
+```
+
 ## Project Structure
 
 ```
